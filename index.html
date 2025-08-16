@@ -3,48 +3,64 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>H M E WILSHIRE MANAGEMENT LLC — 2025</title>
-  <meta name="description" content="H M E WILSHIRE MANAGEMENT LLC — office administrative & management services in California." />
+  <title>LUXE K STUDIO LLC — 2025</title>
+  <meta name="description" content="LUXE K STUDIO LLC — creative studio & premium brand services." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    /* ========= COLOR PALETTE (Luxury) ========= */
     :root{
-      --bg:#0a0e12; --card:#141a1f; --muted:#9fb0c4; --text:#eef4ff;
-      --brand:#5cc8ff; --brand-2:#8b5cff; --radius:16px;
+      --bg:#0b0b0d;          /* Black Onyx */
+      --card:#121214;        /* Deep Charcoal */
+      --text:#f5f2ea;        /* Ivory */
+      --muted:#c9c2b0;       /* Muted Ivory */
+      --brand:#d6b36a;       /* Satin Gold */
+      --brand-2:#a97c50;     /* Bronze */
+      --accent-soft: rgba(214,179,106,.18);
+      --radius:16px;
       --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --grad: radial-gradient(60% 80% at 10% 10%, rgba(92,200,255,.25), transparent 60%),
-              radial-gradient(70% 90% at 90% 10%, rgba(139,92,255,.18), transparent 65%),
-              radial-gradient(60% 80% at 50% 90%, rgba(92,255,194,.10), transparent 60%);
+      --grad:
+        radial-gradient(70% 90% at 15% 10%, var(--accent-soft), transparent 60%),
+        radial-gradient(60% 80% at 85% 15%, rgba(169,124,80,.18), transparent 65%),
+        radial-gradient(60% 80% at 50% 90%, rgba(255,255,255,.06), transparent 60%);
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
     a{color:var(--brand);text-decoration:none}
     img{max-width:100%;display:block;border-radius:14px}
     .wrap{width:min(1200px,92%);margin-inline:auto}
-    header.site{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)), var(--grad);border-bottom:1px solid rgba(255,255,255,.06)}
+    header.site{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,0)), var(--grad);border-bottom:1px solid rgba(255,255,255,.08)}
     .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:16px}
     .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
-    .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 6px 20px rgba(92,200,255,.35)}
+    .logo{
+      width:42px;height:42px;border-radius:12px;
+      background:conic-gradient(from 120deg,var(--brand),var(--brand-2),var(--brand));
+      box-shadow:0 8px 28px rgba(214,179,106,.35)
+    }
     nav a{margin:0 10px;color:var(--muted)}
-    .cta{padding:10px 16px;border:1px solid rgba(255,255,255,.15);border-radius:12px}
+    .cta{padding:10px 16px;border:1px solid rgba(255,255,255,.12);border-radius:12px}
     .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:48px 0 64px}
     .hero h1{font-size:clamp(32px,4vw,54px);line-height:1.05;margin:.1em 0}
     .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--muted);font-size:14px}
-    .hero .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px;backdrop-filter:blur(8px);box-shadow:var(--shadow)}
-    .section{padding:72px 0;border-top:1px solid rgba(255,255,255,.06)}
+    .hero .card{background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.09);border-radius:var(--radius);padding:18px;backdrop-filter:blur(8px);box-shadow:var(--shadow)}
+    .section{padding:72px 0;border-top:1px solid rgba(255,255,255,.08)}
     .section h2{font-size:clamp(26px,3vw,38px);margin:0 0 12px}
     .lead{color:var(--muted);max-width:70ch}
     .cards{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:26px}
-    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
     .span-6{grid-column:span 6} .span-5{grid-column:span 5} .span-7{grid-column:span 7} .span-12{grid-column:span 12}
     .tag{font-size:12px;letter-spacing:.3px;color:var(--muted)}
-    .btn{display:inline-flex;align-items:center;gap:10px;margin-top:16px;padding:12px 18px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#031018;font-weight:700;border:0}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;margin-top:16px;padding:12px 18px;border-radius:12px;
+      background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0c0c0e;font-weight:700;border:0
+    }
     .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
-    input,textarea{width:100%;padding:14px 16px;border-radius:12px;background:#0f141a;border:1px solid rgba(255,255,255,.12);color:var(--text)}
+    input,textarea{width:100%;padding:14px 16px;border-radius:12px;background:#0f1012;border:1px solid rgba(255,255,255,.14);color:var(--text)}
+    input::placeholder,textarea::placeholder{color:#bfb8a6}
     textarea{min-height:130px;resize:vertical}
-    .footer{padding:32px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
-    .tiny{font-size:12px;color:#7f93aa}
+    .footer{padding:32px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.08)}
+    .tiny{font-size:12px;color:#b9b19e}
     figure{margin:0} figcaption{color:var(--muted);font-size:12px;margin-top:8px}
     @media (max-width:900px){.hero{grid-template-columns:1fr;gap:22px}.cards{grid-template-columns:1fr}.span-6,.span-5,.span-7,.span-12{grid-column:auto}.contact-grid{grid-template-columns:1fr}}
   </style>
@@ -53,113 +69,127 @@
 
 <header class="site">
   <div class="wrap topbar">
-    <div class="brand"><div class="logo" aria-hidden="true"></div> H M E WILSHIRE MANAGEMENT LLC</div>
+    <div class="brand"><div class="logo" aria-hidden="true"></div> LUXE K STUDIO LLC</div>
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#solutions">Solutions</a>
+      <a href="#work">Work</a>
       <a href="#why">Why Us</a>
       <a class="cta" href="#contact">Contact</a>
     </nav>
   </div>
 
-  <!-- 1) HERO -->
+  <!-- SECTION 1 / HERO -->
   <div class="wrap hero" id="home" aria-label="Hero">
     <div>
-      <span class="pill">Office Administrative • Business Support • Management Services</span>
-      <h1>Administrative operations that run smoothly and scale confidently.</h1>
-      <p class="lead">We help organizations streamline back-office processes, improve compliance, and deliver reliable support across teams.</p>
-      <a class="btn" href="#services">Explore services</a>
-      <p class="tiny" style="margin-top:10px">
-        Email: <a href="mailto:contact@hmewm.shop">contact@hmewm.shop</a> • Tel: <a href="tel:+16183649663">+1 (618) 364-9663</a>
-      </p>
+      <span class="pill">Creative Studio • Branding • Content</span>
+      <h1>Premium visuals & branding that feel unmistakably luxe.</h1>
+      <p class="lead">We craft elevated brand identities, campaigns, and content with a refined, modern aesthetic.</p>
+      <a class="btn" href="#work">See our work</a>
+      <p class="tiny" style="margin-top:10px">Email: <a href="mailto:contact@luxekstud.shop">contact@luxekstud.shop</a> • Tel: <a href="tel:+12707122463">+1 (270) 712-2463</a></p>
     </div>
     <figure class="card">
-      <img src="https://avatars.mds.yandex.net/i?id=422a2922f197f8531679db02d94bce8d5d626d2e-5087168-images-thumbs&n=13" alt="Modern office overview" />
-      <figcaption>Reliable admin systems for growing companies.</figcaption>
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop" alt="Luxury desk with gold accents" />
+      <figcaption>Signature palette: onyx, satin gold, and ivory tones.</figcaption>
     </figure>
   </div>
 </header>
 
 <main>
 
-  <!-- 2) ABOUT -->
+  <!-- SECTION 2 / ABOUT -->
   <section class="section" id="about" aria-label="About">
     <div class="wrap">
-      <h2>About HME Wilshire</h2>
-      <p class="lead">Based in Encino, CA, we provide administrative and management services that keep businesses compliant and efficient.</p>
+      <h2>About LUXE K</h2>
+      <p class="lead">A boutique creative studio delivering brand strategy, identity systems, and art direction for premium products and services.</p>
 
       <div class="cards">
         <figure class="card span-6">
-          <img src="https://yandex-images.clstorage.net/10J03dQ21/f37107_dCm/HrArjOkAJjzOvTkWPjfDj-zaArd0DVBCstJA4jrpJ2lmVLSzhVPkSCQ1O4E6XbpHXzmFpNVXmab0iEmBS7PKogqwa8CoSjBnnfwhQjY0xo3xh0GmaFdUH6iQHL99sStmM1bY2fQrknMIVBHwRyrzFgk41OWYBsb6z-dQ5x6Yno8stAm90B97M92LUQoZHMSt7oA7g25vbjS59S-eX_o2OVAD9cjND5dELFwR5kYDyTAtO9_OwhHv1dbJA_4dori3DpsQiNgQbBTPhEAjOxzEusGAIoFYVHo3t-IXm0TZNQ9WF9TqwT2xYjFiC9pLCeMUMjDm6uASy_3Y0zrYLIq5lj2iEYfLHkU774dcFhE64afflQuYQkhbLK3xLYdC4jMSRBTfwMAEs2gNXiLzdwPCIgUZ1sXcEP3_98g2wzKDjLQPuy6j4xR4AdOqQx0cEOaf2acgtHlKeg-Y5zyxTs09FUwX7PTxIJNNBXEo3X4m8CMEJujS2S3C9fHfNeEJuJKNBbQLid4iTyPNjH8lCB3zoOemFJNDUG0rodsYsVfuKz9yAcTW1zq0Sh5-FeNWAN8VCwTn7uQyy_TczAXTO5y-kxC7MJf0MGco5IFjPBIW4pDDvCmmS1dqJ6LZMLpv3wwyTA_-w98DmV0EQhXdZS_NDyYN5sXvEvnHxcsk8R2RsK8slCmE6BBbINCZbiw1PO-e3b4rmnFpQAyY1S2za_MuDmEv1eHBJZh2EUgqzWgh2g4jO__J3TP_0OTOMdE5hLGMCbwKjMgwfwDvhUY4BQzMhMySL7l5SG0_geETkEPEMi5jLtPx5iSzdTVEL81eNdkRLjXY3scT-dvD6D7kLKKTlDGyMYzYOmAz3IdTHQoYwYHTjQSRT3NUB47FOoNXzD8VaQbKy-Q4uF8mVTfZWTTGHC0Ixs71AO3h9vAo-D-6na4qujiGyx9bIcShXT8WKsGh37Apk2NDThqq5QewfOs" alt="Team working" />
-          <figcaption>Experienced coordinators across HR, finance ops, and vendor management.</figcaption>
+          <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1600&auto=format&fit=crop" alt="Moodboard with neutral and gold palette" />
+          <figcaption>From concept to campaign — tailored, end-to-end.</figcaption>
         </figure>
         <div class="card span-6">
-          <div class="tag">Head Office</div>
-          <p>3910 Encino Hills Pl, Encino, CA 91436-3804, United States</p>
-          <div class="tag" style="margin-top:8px">What we do</div>
-          <p>Office administrative services, management services, facilities support, and compliance processes.</p>
+          <div class="tag">Contact</div>
+          <p>Email: <a href="mailto:contact@luxekstud.shop">contact@luxekstud.shop</a><br>Phone: <a href="tel:+12707122463">+1 (270) 712-2463</a></p>
+          <div class="tag" style="margin-top:8px">Signature style</div>
+          <p>Minimal forms, rich textures, warm metallic accents, and editorial typography.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3) SERVICES -->
+  <!-- SECTION 3 / WORK -->
+  <section class="section" id="work" aria-label="Work">
+    <div class="wrap">
+      <h2>Selected work</h2>
+      <p class="lead">A few projects that show our taste and craft.</p>
+
+      <div class="cards">
+        <figure class="card span-6">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop" alt="Packaging with gold foil" />
+          <figcaption>Premium packaging with foil & emboss.</figcaption>
+        </figure>
+        <figure class="card span-6">
+          <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1600&auto=format&fit=crop" alt="Fashion editorial look" />
+          <figcaption>Editorial campaign with cinematic lighting.</figcaption>
+        </figure>
+        <figure class="card span-12">
+          <img src="https://images.unsplash.com/photo-1520975928316-56c2a6bbb1b4?q=80&w=2000&auto=format&fit=crop" alt="Brand stationery suite" />
+          <figcaption>Identity system: logotype, palette, and stationery suite.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 / SERVICES -->
   <section class="section" id="services" aria-label="Services">
     <div class="wrap">
       <h2>Services</h2>
-      <p class="lead">Flexible support from one-time cleanups to ongoing managed services.</p>
-
+      <p class="lead">Strategy, design, and production — made simple.</p>
       <div class="cards">
         <div class="card span-5">
-          <h3>Back-Office Operations</h3>
-          <p>Document workflows, records hygiene, calendaring, and executive support.</p>
+          <h3>Brand Identity</h3>
+          <p>Naming, logo, palette, typography, and style guides for consistent rollout.</p>
         </div>
         <figure class="card span-7">
-          <img src="https://yandex-images.clstorage.net/10J03dQ21/f37107_dCm/HrArjOkAJjzOvTkWPjfDj-zaArd0DVBCstJA4zi-cWhgA-axhVrjHCI1PYY2V-5GVWnS-4AEnKGl3ROOTbCZ9Q2zZ8CuRj1pm_svQjY0xo3xh0GmaFdUH6iQHL99sStmM1bY2fQrknMIVBHwRyrzFgk41OWYBsb6z-dQ5x6Yno8stAm90B97M92LUQoZHMSt7oA7g25vbjS59S-eX_o2OVAD9cjND5dELFwR5kYDyTAtO9_OwhHv1dbJA_4dori3DpsQiNgQbBTPhEAjOxzEusGAIoFYVHo3t-IXm0TZNQ9WF9TqwT2xYjFiC9pLCeMUMjDm6uASy_3Y0zrYLIq5lj2iEYfLHkU774dcFhE64afflQuYQkhbLK3xLYdC4jMSRBTfwMAEs2gNXiLzdwPCIgUZ1sXcEP3_98g2wzKDjLQPuy6j4xR4AdOqQx0cEOaf2acgtHlKeg-Y5zyxTs09FUwX7PTxIJNNBXEo3X4m8CMEJujS2S3C9fHfNeEJuJKNBbQLid4iTyPNjH8lCB3zoOemFJNDUG0rodsYsVfuKz9yAcTW1zq0Sh5-FeNWAN8VCwTn7uQyy_TczAXTO5y-kxC7MJf0MGco5IFjPBIW4pDDvCmmS1dqJ6LZMLpv3wwyTA_-w98DmV0EQhXdZS_NDyYN5sXvEvnHxcsk8R2RsK8slCmE6BBbINCZbiw1PO-e3b4rmnFpQAyY1S2za_MuDmEv1eHBJZh2EUgqzWgh2g4jO__J3TP_0OTOMdE5hLGMCbwKjMgwfwDvhUY4BQzMhMySL7l5SG0_geETkEPEMi5jLtPx5iSzdTVEL81eNdkRLjXY3scT-dvD6D7kLKKTlDGyMYzYOmAz3IdTHQoYwYHTjQSRT3NUB47FOoNXzD8VaQbKy-Q4uF8mVTfZWTTGHC0Ixs71AO3h9vAo-D-6na4qujiGyx9bIcShXT8WKsGh37Apk2NDThqq5QewfOs" alt="Operations board" />
-          <figcaption>Dashboards and playbooks for clarity and speed.</figcaption>
+          <img src="https://images.unsplash.com/photo-1520975916090-01b5d1f43cf8?q=80&w=1600&auto=format&fit=crop" alt="Logo grid" />
+          <figcaption>Precision craftsmanship with premium finishes.</figcaption>
         </figure>
-
         <div class="card span-6">
-          <h3>Vendor & Facilities Support</h3>
-          <p>Onboarding, PO tracking, site services coordination, and SLA monitoring.</p>
+          <h3>Content & Campaigns</h3>
+          <p>Photo/video direction, social kits, and launch assets that convert.</p>
         </div>
-        <figure class="card span-6">
-          <img src="https://avatars.mds.yandex.net/i?id=04ae46cace46e582e8685cfec7ba6981fdb693ea-8316779-images-thumbs&n=13" alt="Facilities coordination" />
-          <figcaption>Seamless coordination across offices and partners.</figcaption>
-        </figure>
+        <div class="card span-6">
+          <h3>Web & Ecommerce</h3>
+          <p>Elegant, fast sites that mirror your brand’s sophistication.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 4) SOLUTIONS / WHY US -->
+  <!-- SECTION 5 / WHY US -->
   <section class="section" id="why" aria-label="Why choose us">
     <div class="wrap">
-      <h2>Why choose HME Wilshire</h2>
-      <p class="lead">Independent perspective, disciplined execution, measurable outcomes.</p>
-
+      <h2>Why choose LUXE K</h2>
+      <p class="lead">Boutique attention, senior craft, and results you can feel.</p>
       <div class="cards">
-        <figure class="card span-12">
-          <img src="https://avatars.mds.yandex.net/i?id=a444170c775c4e85abab378618a509b0bcf24a45-5460185-images-thumbs&n=13" alt="People collaborating in meeting" />
-          <figcaption>Transparent reporting and continuous improvement.</figcaption>
-        </figure>
         <div class="card span-6">
-          <h3>Scalable</h3>
-          <p>Support that grows with your headcount and complexity.</p>
+          <h3>Refined taste</h3>
+          <p>We blend minimal design with rich materiality and warm metals.</p>
         </div>
         <div class="card span-6">
-          <h3>Compliant</h3>
-          <p>Documentation and controls that keep audits simple.</p>
+          <h3>Clear process</h3>
+          <p>Milestone-based deliverables, fast feedback cycles, and transparent costs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5) CONTACT -->
+  <!-- CONTACT -->
   <section class="section" id="contact" aria-label="Contact">
     <div class="wrap">
       <h2>Contact</h2>
-      <p class="lead">Tell us your current challenge — we’ll respond within one business day.</p>
+      <p class="lead">Share your brief — we’ll reply shortly.</p>
 
       <div class="contact-grid">
         <div class="card">
@@ -168,16 +198,17 @@
               <div><label class="tag">Full name</label><input required placeholder="Your name"></div>
               <div><label class="tag">Email</label><input type="email" required placeholder="you@example.com"></div>
             </div>
-            <div style="margin-top:14px"><label class="tag">Message</label><textarea placeholder="How can we help?"></textarea></div>
+            <div style="margin-top:14px"><label class="tag">Message</label><textarea placeholder="Project, deadline, budget…"></textarea></div>
             <button class="btn" type="submit">Send</button>
             <p class="tiny" style="margin-top:10px">
-              Or reach us at <a href="mailto:contact@hmewm.shop">contact@hmewm.shop</a> · <a href="tel:+16183649663">+1 (618) 364-9663</a>
+              Or reach us at <a href="mailto:contact@luxekstud.shop">contact@luxekstud.shop</a> ·
+              <a href="tel:+12707122463">+1 (270) 712-2463</a>
             </p>
           </form>
         </div>
         <figure class="card">
-          <img src="https://avatars.mds.yandex.net/i?id=422a2922f197f8531679db02d94bce8d5d626d2e-5087168-images-thumbs&n=13" alt="Office exterior" />
-          <figcaption>Encino, California — serving clients statewide.</figcaption>
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop" alt="Studio interior with warm lighting" />
+          <figcaption>By appointment • Worldwide collaborations.</figcaption>
         </figure>
       </div>
     </div>
@@ -188,8 +219,8 @@
 <footer class="footer">
   <div class="wrap">
     <div style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-      <div class="tiny">© <span id="y"></span> H M E WILSHIRE MANAGEMENT LLC. All rights reserved.</div>
-      <div class="tiny">Email: contact@hmewm.shop • Tel: +1 (618) 364-9663</div>
+      <div class="tiny">© <span id="y"></span> LUXE K STUDIO LLC. All rights reserved.</div>
+      <div class="tiny">Email: contact@luxekstud.shop • Tel: +1 (270) 712-2463</div>
     </div>
   </div>
 </footer>
